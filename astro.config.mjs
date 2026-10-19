@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 
-// 部署在子路徑時，把 base 改成該路徑，例如 '/portfolio/'
+// GitHub Pages 專案網站：https://jason21403019.github.io/portfolio-2yr/
 export default defineConfig({
-  base: '/',
+  site: 'https://jason21403019.github.io',
+  base: '/portfolio-2yr',
 });
