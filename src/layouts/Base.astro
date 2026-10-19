@@ -1,0 +1,139 @@
+---
+import '../styles/global.css';
+
+const { title, description = '', current = '' } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const links = [
+  { k: 'resume', label: '履歷', href: `${base}/` },
+  { k: 'works', label: '作品', href: `${base}/works/` },
+];
+---
+
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} | Chang Che Sung</title>
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+    {description && <meta name="description" content={description} />}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+  <body>
+    <div class="progress" id="progress"></div>
+    <div class="wrap">
+      <nav class="top">
+        <a class="brand" href={`${base}/`}>
+          <img src={`${base}/favicon.svg`} alt="" width="28" height="28" />
+          <span>Chang Che Sung</span>
+        </a>
+        <div class="links">
+          {links.map((l) => (
+            <a href={l.href} aria-current={l.k === current ? 'page' : undefined}>{l.label}</a>
+          ))}
+        </div>
+      </nav>
+      <main>
+        <slot />
+      </main>
+      <footer>© 2026 Chang Che Sung. All rights reserved.</footer>
+    </div>
+    <script>
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // 捲動進度條
+      const bar = document.getElementById('progress')!;
+      const onScroll = () => {
+        const h = document.documentElement.scrollHeight - innerHeight;
+        bar.style.transform = `scaleX(${h > 0 ? scrollY / h : 0})`;
+      };
+      addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // 進場動畫
+      const targets = document.querySelectorAll<HTMLElement>(
+        '.works-head > *, .side > *, .content > section, .content > details, .year, .card, .job, .mini li'
+      );
+      targets.forEach((el, i) => {
+        el.classList.add('rv');
+        el.style.setProperty('--d', `${(i % 4) * 0.07}s`);
+      });
+      if (reduce || !('IntersectionObserver' in window)) {
+        targets.forEach((el) => el.classList.add('in'));
+      } else {
+        const io = new IntersectionObserver(
+          (es) => es.forEach((e) => {
+            if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+          }),
+          { rootMargin: '0px 0px -8% 0px', threshold: 0.05 }
+        );
+        targets.forEach((el) => io.observe(el));
+      }
+
+      // 數字跳動
+      document.querySelectorAll<HTMLElement>('[data-count]').forEach((el) => {
+        const end = Number(el.dataset.count);
+        if (reduce) return;
+        const t0 = performance.now(), dur = 1100;
+        const tick = (t: number) => {
+          const p = Math.min((t - t0) / dur, 1);
+          el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))).toLocaleString();
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        el.textContent = '0';
+        requestAnimationFrame(tick);
+      });
+
+      // 收合區塊：用高度做開闔動畫
+      document.querySelectorAll<HTMLDetailsElement & { _anim?: Animation; _closing?: boolean }>('details.fold, details.tools').forEach((d) => {
+        const sum = d.querySelector('summary')!;
+        sum.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (reduce) { d.open = !d.open; d.classList.toggle('is-open', d.open); return; }
+          const opening = !d.open || !!d._closing;
+          const start = d.offsetHeight;
+          d._anim?.cancel();
+          d.style.overflow = 'hidden';
+          d._closing = !opening;
+          d.classList.toggle('is-open', opening);
+          if (opening) d.open = true;
+          const end = opening ? d.offsetHeight : sum.offsetHeight;
+          const anim = d.animate({ height: [`${start}px`, `${end}px`] }, { duration: 320, easing: 'cubic-bezier(0.2, 0.7, 0.2, 1)' });
+          d._anim = anim;
+          anim.onfinish = () => {
+            d.style.overflow = '';
+            d._anim = undefined;
+            if (!opening) { d.open = false; d._closing = false; }
+          };
+        });
+      });
+
+      // 打字機
+      const typed = document.getElementById('typed');
+      if (typed) {
+        const words = (typed.dataset.words || '').split('|');
+        if (reduce) { typed.textContent = words[0]; }
+        else {
+          let w = 0, i = 0, del = false;
+          const step = () => {
+            const word = words[w];
+            typed.textContent = word.slice(0, i);
+            if (!del && i === word.length) { del = true; return setTimeout(step, 1600); }
+            if (del && i === 0) { del = false; w = (w + 1) % words.length; }
+            i += del ? -1 : 1;
+            setTimeout(step, del ? 45 : 90);
+          };
+          step();
+        }
+      }
+    </script>
+  </body>
+</html>

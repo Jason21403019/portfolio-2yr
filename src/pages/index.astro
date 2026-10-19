@@ -1,0 +1,148 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import projects from '../data/projects.json';
+import resume from '../data/resume.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const featured = projects.filter((p) => p.featured);
+const c = resume.contact;
+const contacts = [
+  c.email && { label: 'Email', value: c.email, href: `mailto:${c.email}` },
+  c.phone && { label: '電話', value: c.phone, href: `tel:${c.phone}` },
+  c.github && { label: 'GitHub', value: c.github.replace(/^https?:\/\//, ''), href: c.github },
+  c.linkedin && { label: 'LinkedIn', value: c.linkedin.replace(/^https?:\/\//, ''), href: c.linkedin },
+  c.location && { label: '地點', value: c.location },
+].filter(Boolean) as { label: string; value: string; href?: string }[];
+const earlier = resume.earlier;
+---
+
+<Base title="履歷" description={resume.summary} current="resume">
+  <div class="resume">
+    <aside class="side">
+      <img class="avatar" src={`${base}/favicon.svg`} alt="" width="96" height="96" />
+      <div>
+        <h1>{resume.name}</h1>
+        {resume.nameEn && <div class="en">{resume.nameEn}</div>}
+      </div>
+      {resume.title && (
+        <p class="role">{resume.title}<span class="sep"> / </span><span id="typed" data-words="Nuxt.js|Astro|PHP + MySQL|跨團隊協作">Nuxt.js</span><span class="caret"></span></p>
+      )}
+
+      {contacts.length > 0 && (
+        <section>
+          <h2>聯絡</h2>
+          <ul class="plain">
+            {contacts.map((x) => (
+              <li><span class="k">{x.label}</span>{x.href ? <a href={x.href}>{x.value}</a> : x.value}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <section>
+        <h2>技能</h2>
+        {resume.skills.map((g) => (
+          <div class="skill">
+            <div class="k">{g.group}</div>
+            <ul class="chips">{g.items.map((i) => <li>{i}</li>)}</ul>
+          </div>
+        ))}
+      </section>
+
+      {(resume.certs.length > 0 || resume.languages.length > 0) && (
+        <section>
+          <h2>證照與語言</h2>
+          <ul class="plain">
+            {resume.certs.map((x) => <li>{x}</li>)}
+            {resume.languages.map((x) => <li>{x}</li>)}
+          </ul>
+        </section>
+      )}
+
+      <button type="button" class="print" id="print">列印 / 存成 PDF</button>
+    </aside>
+
+    <div class="content">
+      <section>
+        <h2>簡介</h2>
+        <p class="summary">{resume.summary}</p>
+      </section>
+
+      <section>
+        <h2>經歷</h2>
+        {resume.experience.map((e) => (
+          <article class="job">
+            <div class="job-head">
+              <h3>{e.company}{e.role && <span> · {e.role}</span>}</h3>
+              <span class="period">{e.start} – {e.end || '現在'}</span>
+            </div>
+            <ul class="bullets">{e.highlights.map((h) => <li>{h}</li>)}</ul>
+          </article>
+        ))}
+      </section>
+
+      <section class="featured">
+        <div class="sec-head">
+          <h2>精選作品</h2>
+          <a class="more" href={`${base}/works/`}>看全部 {projects.length} 個 →</a>
+        </div>
+        <div class="feat-grid">
+          {featured.map((p) => <ProjectCard p={p} />)}
+        </div>
+      </section>
+
+      {resume.personalProjects.length > 0 && (
+        <details class="fold">
+          <summary><h2>個人專案<span class="cnt">{resume.personalProjects.length}</span></h2></summary>
+          <ul class="mini">
+            {resume.personalProjects.map((p) => (
+              <li>
+                <div class="job-head"><h3>{p.name}</h3><span class="period">{p.period}</span></div>
+                <p>{p.desc}</p>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
+
+      {earlier && (
+        <details class="fold">
+          <summary><h2>{earlier.title}<span class="cnt">{earlier.period}</span></h2></summary>
+          <p class="earlier-sum">{earlier.summary}</p>
+          {earlier.items.map((e) => (
+            <article class="job small">
+              <div class="job-head">
+                <h3>{e.company}<span> · {e.role}</span></h3>
+                <span class="period">{e.period}</span>
+              </div>
+              {e.points.length > 0 && <ul class="bullets">{e.points.map((h) => <li>{h}</li>)}</ul>}
+            </article>
+          ))}
+        </details>
+      )}
+
+      {resume.education.length > 0 && (
+        <section>
+          <h2>學歷</h2>
+          {resume.education.map((e) => (
+            <article class="job small">
+              <div class="job-head">
+                <h3>{e.school}<span> · {e.degree}</span></h3>
+                <span class="period">{e.start} – {e.end}</span>
+              </div>
+            </article>
+          ))}
+        </section>
+      )}
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('print')?.addEventListener('click', () => window.print());
+    // 列印時展開所有收合區塊
+    window.addEventListener('beforeprint', () => {
+      document.querySelectorAll<HTMLDetailsElement>('details.fold').forEach((d) => (d.open = true));
+    });
+  </script>
+</Base>

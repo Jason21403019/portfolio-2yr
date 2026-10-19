@@ -1,0 +1,42 @@
+---
+import { CATS } from '../data/cats';
+const { p } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const ym = (d: string) => d.slice(0, 7).replace('-', '.');
+const host = (u: string) => {
+  try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return ''; }
+};
+const cat = CATS[p.cat as keyof typeof CATS];
+const Main = p.url ? 'a' : 'div';
+---
+
+<article class="card" data-cat={p.cat} style={`--cat:${cat[1]}`}>
+  <Main
+    class="main"
+    {...(p.url ? { href: p.url, target: '_blank', rel: 'noopener' } : {})}
+  >
+    {p.img ? (
+      <div class="shot"><img src={base + p.img} alt="" loading="lazy" /></div>
+    ) : (
+      <div class="shot ph"><span>{p.title}</span></div>
+    )}
+    <div class="body">
+      <div class="host">
+        <span>{host(p.url) || p.dir}</span>
+        {p.url && <span>↗</span>}
+      </div>
+      <h3>{p.title}</h3>
+      {p.desc && <p class="d">{p.desc}</p>}
+    </div>
+  </Main>
+  <div class="foot">
+    <div class="row">
+      <span class="kind"><i></i>{cat[0]}</span>
+      <span class="date">{ym(p.s)}–{ym(p.e)}</span>
+    </div>
+    <details class="tools">
+      <summary>使用工具</summary>
+      <ul>{p.tech.map((t) => <li>{t}</li>)}</ul>
+    </details>
+  </div>
+</article>

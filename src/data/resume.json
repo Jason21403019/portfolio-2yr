@@ -1,0 +1,146 @@
+{
+  "name": "張哲菘",
+  "nameEn": "Chang Che Sung",
+  "title": "前端工程師",
+  "summary": "前端工程師，兩年內獨立與協作完成近 25 個網站專案，涵蓋互動活動、專題頁與行銷頁。主力使用 Nuxt.js 與 Astro，也能用 PHP 與 MySQL 補上會員驗證和名額控管的後端。從餐飲店長轉職，習慣在多方需求和時程壓力下排定優先順序，與 PM、設計師、後端對齊後準時上線。",
+  "contact": {
+    "email": "jason86100110@gmail.com",
+    "phone": "0970638715",
+    "github": "https://github.com/Jason21403019",
+    "linkedin": "",
+    "location": "新北市"
+  },
+  "experience": [
+    {
+      "company": "聯合線上",
+      "role": "前端工程師",
+      "start": "2024.09",
+      "end": "",
+      "highlights": [
+        "獨立與協作開發、維護接近 25 個專案，類型包含互動活動、專題微網站、行銷與課程頁。",
+        "以 Nuxt.js 開發互動活動並串接前後端 API，用 Pinia 管理狀態；以 Astro 開發靜態專題與活動頁，兼顧 SEO 與載入速度。",
+        "為需要會員與名額控管的活動編寫 PHP 後端與 MySQL 資料表，含 CSRF 防護、Turnstile 驗證與 UDN 會員整合。",
+        "與 PM、UI/UX 設計師、後端頻繁溝通，在技術可行性與時程之間取得平衡，近 20 個專案如期上線。"
+      ]
+    },
+    {
+      "company": "緯育 TibaMe 前端工程師進修班",
+      "role": "全職學員，專題組長",
+      "start": "2024.03",
+      "end": "2024.07",
+      "highlights": [
+        "300 小時以上實體課程：HTML、CSS (SCSS)、JavaScript、Vue、Vite、Pinia，以及 PHP 與 MySQL 會員系統。",
+        "擔任專題組長，負責協調組員分工與時程卡關問題。"
+      ]
+    },
+    {
+      "company": "Udemy 線上課程",
+      "role": "自學前端",
+      "start": "2022.07",
+      "end": "2023.10",
+      "highlights": [
+        "自學 HTML、CSS (SCSS)、JavaScript、React 與 Node.js，完成多個個人網站，取得 Udemy 網頁開發課程結業證書。"
+      ]
+    }
+  ],
+  "earlier": {
+    "title": "轉職前：餐飲業",
+    "period": "2016 – 2023",
+    "summary": "約 10 年餐飲服務與現場管理經驗，從外場、儲備幹部到店長。管理需要清晰的邏輯與責任感，這也是我後來適應前端專案協作與排錯的基礎。",
+    "items": [
+      {
+        "company": "大樹先生的家（親子空間）",
+        "role": "儲備幹部、店長，管理 9–12 人",
+        "period": "2021.02 – 2022.01",
+        "points": [
+          "排班與人力成本控制，新進員工訓練。",
+          "包場佈置與活動主持，現場客訴處理。"
+        ]
+      },
+      {
+        "company": "台北萬豪酒店",
+        "role": "大廳酒吧服務員（大學實習）",
+        "period": "2020.01 – 2020.07",
+        "points": []
+      },
+      {
+        "company": "亞馬仕希臘餐廳",
+        "role": "外場服務",
+        "period": "2016.07 – 2018.07",
+        "points": []
+      }
+    ]
+  },
+  "skills": [
+    {
+      "group": "前端",
+      "items": [
+        "Nuxt.js / Vue.js",
+        "Pinia",
+        "Astro",
+        "HTML5 / CSS3 / SCSS",
+        "JavaScript (ES6+)",
+        "GSAP",
+        "React"
+      ]
+    },
+    {
+      "group": "後端與資料庫",
+      "items": [
+        "PHP",
+        "MySQL",
+        "HeidiSQL"
+      ]
+    },
+    {
+      "group": "工具與協作",
+      "items": [
+        "Git / GitHub / SourceTree",
+        "Figma"
+      ]
+    }
+  ],
+  "personalProjects": [
+    {
+      "name": "Apex FITness 健身房網站",
+      "period": "2024.04 – 2024.05",
+      "desc": "用 Figma 做線框圖與視覺稿，Flex 排版加 SCSS 巢狀，並以 localStorage 在分頁間傳遞資料。"
+    },
+    {
+      "name": "Photo Website",
+      "period": "2022.09",
+      "desc": "以 React 與 Hooks 開發，搜尋關鍵字取得 API 資料並渲染。"
+    },
+    {
+      "name": "Todo List",
+      "period": "2023.02",
+      "desc": "DOM 事件互動，資料存在本地儲存，並以 merge sort 依月份與日期排序。"
+    },
+    {
+      "name": "夏威夷旅遊租借服務網",
+      "period": "2022.07",
+      "desc": "RWD 手刻，JavaScript 控制捲動時的導覽列變化。"
+    },
+    {
+      "name": "台灣經濟發展歷史",
+      "period": "2022.06",
+      "desc": "Flex 手刻，導覽列連結效果，並嵌入 Google Map。"
+    }
+  ],
+  "education": [
+    {
+      "school": "私立中華大學",
+      "degree": "餐旅管理學系 學士",
+      "start": "2016.09",
+      "end": "2020.06"
+    }
+  ],
+  "certs": [
+    "Udemy 網頁開發全攻略課程結業證書",
+    "TBSA 商務企劃能力初級檢定",
+    "丙級中餐（葷食）烹調技術士"
+  ],
+  "languages": [
+    "英文：聽、讀中等，說、寫略懂"
+  ]
+}

@@ -1,0 +1,369 @@
+[
+  {
+    "dir": "ChungYuan-USR",
+    "s": "2026-09-17",
+    "e": "2026-10-15",
+    "commits": 171,
+    "tech": [
+      "Nuxt 3",
+      "GSAP"
+    ],
+    "cat": "feature",
+    "title": "中原大學USR 永續原力LEVEL UP",
+    "desc": "過去，只要精通一項專業技能，就能無往不利。如今在快速變動的時代，具備跨域、創新、永續思維的非典型人才，才能靈活運用知識跟技能，應對難以預測的挑戰，為世界帶來正向改變。跟著中原大學「USR大學社會責任實踐計畫」，攜手不同領域的夥伴，從地方創生、教育陪力到永續行動，發揮中原人獨有的永續「原」力，改變一處角落、一個社區、一座城市，改變自己的未來！",
+    "url": "https://udn.com/upf/ubrand/2026_data/cycu.usr.levelup/",
+    "img": "/img/ChungYuan-USR.jpg",
+    "featured": true
+  },
+  {
+    "dir": "bd_game10th_2026",
+    "s": "2026-08-13",
+    "e": "2026-09-24",
+    "commits": 140,
+    "tech": [
+      "Nuxt 3",
+      "PHP",
+      "MySQL"
+    ],
+    "cat": "event",
+    "title": "遊戲角落 10 周年限時委託｜解鎖 30 位 VTuber 祝福，點亮專屬我們的冒險回憶",
+    "desc": "30 位 VTuber 每日限時祝福 × 冒險者尋人懸賞令！天天登入解鎖祝福、找回失聯戰友，累積抽豪華大獎！",
+    "url": "https://event.udn.com/bd_game10th_2026/",
+    "img": "/img/bd_game10th_2026.jpg",
+    "featured": true
+  },
+  {
+    "dir": "bd_petmeme_2026",
+    "s": "2026-07-27",
+    "e": "2026-09-03",
+    "commits": 68,
+    "tech": [
+      "Nuxt 3",
+      "PHP",
+      "MySQL"
+    ],
+    "cat": "event",
+    "title": "【爆笑毛孩抽卡機】 | udn寵物部落",
+    "desc": "快來抽出超有戲的貓狗謎之行為梗圖卡，讓人療癒又紓壓，加碼再抽多項禮券等好禮。",
+    "url": "https://pets.udn.com/pets/event/bd_petmeme_2026",
+    "img": "/img/bd_petmeme_2026.jpg",
+    "featured": true
+  },
+  {
+    "dir": "5thnetcontest",
+    "s": "2026-07-07",
+    "e": "2026-08-21",
+    "commits": 39,
+    "tech": [
+      "Astro"
+    ],
+    "cat": "event",
+    "title": "琅琅原創｜第五屆兩岸網絡文學大賽網路人氣獎票選活動",
+    "desc": "誰是網友票選TOP1？快來為你喜愛的作品應援吧！",
+    "url": "https://event.udn.com/5thnetcontest/",
+    "img": "/img/5thnetcontest.jpg",
+    "featured": false
+  },
+  {
+    "dir": "TEK2606UB010",
+    "s": "2026-06-03",
+    "e": "2026-10-16",
+    "commits": 23,
+    "tech": [
+      "Astro"
+    ],
+    "cat": "event",
+    "title": "琅琅讀墨：你的數位閱讀新日常",
+    "desc": "「琅琅讀墨」電子書店，結合琅琅悅讀優質選文與Readmoo讀墨閱讀體驗，打造多元便捷的數位閱讀生態系，讓你隨時開啟閱讀，讓好內容成為生活日常。",
+    "url": "https://reading.udn.com/act/grandopening",
+    "img": "/img/TEK2606UB010.jpg",
+    "featured": false
+  },
+  {
+    "dir": "udnxreadmoo",
+    "s": "2026-05-19",
+    "e": "2026-05-28",
+    "commits": 25,
+    "tech": [
+      "Astro"
+    ],
+    "cat": "landing",
+    "title": "琅琅讀墨：你的數位閱讀新日常",
+    "desc": "「琅琅讀墨」電子書店，結合琅琅悅讀優質選文與Readmoo讀墨閱讀體驗，打造多元便捷的數位閱讀生態系，讓你隨時開啟閱讀，讓好內容成為生活日常。",
+    "url": "https://reading.udn.com/act/announce/",
+    "img": "/img/udnxreadmoo.jpg",
+    "featured": false
+  },
+  {
+    "dir": "asiahc",
+    "s": "2026-04-01",
+    "e": "2026-06-22",
+    "commits": 90,
+    "tech": [
+      "Astro"
+    ],
+    "cat": "feature",
+    "title": "亞洲健康智慧園區 環境療癒力 定義養生新觀念",
+    "desc": "在超高齡社會、氣候變遷同時逼近的時代，生病才治療，已經不足以回應挑戰，「環境醫學」成為全新的健康觀念。因應時代發展，強調優質環境的養生村在台灣各處林立，其中位於新竹的亞洲健康智慧園區，空氣品質佳、景觀視野好，成為新一代銀髮住居的新標準。",
+    "url": "https://udn.com/upf/ubrand/2026_data/asiahc/",
+    "img": "/img/asiahc.jpg",
+    "featured": false
+  },
+  {
+    "dir": "bd_PetCaregiver_2026",
+    "s": "2026-02-06",
+    "e": "2026-03-30",
+    "commits": 34,
+    "tech": [
+      "Nuxt 3"
+    ],
+    "cat": "event",
+    "title": "【毛孩守護者：新手到大師的挑戰】-玩知識問答拿好禮 | udn寵物部落",
+    "desc": "從實用的照護觀念到進階大師題，守護毛孩的幸福由你開始！",
+    "url": "https://lab7-pets.udn.com/pets/event/bd_PetCaregiver_2026",
+    "img": "/img/bd_PetCaregiver_2026.jpg",
+    "featured": false
+  },
+  {
+    "dir": "bd_newyear_2026",
+    "s": "2025-04-25",
+    "e": "2026-02-06",
+    "commits": 86,
+    "tech": [
+      "Nuxt 3"
+    ],
+    "cat": "event",
+    "title": "馬上有福・轉好運｜聯合新聞網",
+    "desc": "馬上有福轉好運，天天來轉紅包禮，新春好禮LINE POINTS免費領，iPhone 豪禮奔向你！",
+    "url": "https://event.udn.com/bd_newyear_2026",
+    "img": "/img/bd_newyear_2026.jpg",
+    "featured": false
+  },
+  {
+    "dir": "2026_superOrange",
+    "s": "2025-11-24",
+    "e": "2026-01-07",
+    "commits": 22,
+    "tech": [
+      "Astro"
+    ],
+    "cat": "event",
+    "title": "2026超橘派對",
+    "desc": "不只是派對，而是「人生下半場的生活指南」45+的我們，不是變老，而是更懂玩 !1/3、1/4，11:00~18:00。松山文創園區5號倉庫。打造你的質感人生，從超橘派對開始！",
+    "url": "https://udn.com/superorange2026/",
+    "img": "/img/2026_superOrange.jpg",
+    "featured": false
+  },
+  {
+    "dir": "bd_500bowls_vote2025",
+    "s": "2025-05-20",
+    "e": "2026-07-27",
+    "commits": 33,
+    "tech": [
+      "Astro"
+    ],
+    "cat": "event",
+    "title": "2025 小吃四大天王 - 全台網路人氣票選｜聯合新聞網 × 500 碗",
+    "desc": "小吃四大天王誰能上榜？動動手指票投全台小吃，免費拿 iPhone 及 LINE Points 上萬點數等好康",
+    "url": "https://event.udn.com/bd_500bowls_vote2025",
+    "img": "/img/bd_500bowls_vote2025.jpg",
+    "featured": false
+  },
+  {
+    "dir": "bd_giftexchange_2025",
+    "s": "2025-10-28",
+    "e": "2025-12-30",
+    "commits": 29,
+    "tech": [
+      "Nuxt 3"
+    ],
+    "cat": "event",
+    "title": "【族人月月闖關第二彈】解鎖任務拿寶藏 – 寵物部落",
+    "desc": "聖誕節限定・讓你的萌寵有機會上樹 C 位出道！快來寵物部落交換毛孩照片。",
+    "url": "https://event.udn.com/bd_giftexchange_2025",
+    "img": "/img/bd_giftexchange_2025.jpg",
+    "featured": false
+  },
+  {
+    "dir": "delta",
+    "s": "2025-09-17",
+    "e": "2025-12-24",
+    "commits": 25,
+    "tech": [
+      "Astro"
+    ],
+    "cat": "landing",
+    "title": "台達永續管理實戰課",
+    "desc": "迎接碳有價時代，企業永續將需要精準解讀、具備策略思維，歐盟 CBAM 開徵、IFRS 制定揭露準則、台灣碳費上路，應戰市場新局，台達副總裁暨永續長周志宏將透過「台達永續管理實戰課」，帶領企業決策者把ESG成果轉化為商業價值，掌握營運獲利第二張關鍵財報。",
+    "url": "https://udn.com/upf/ubrand/2025_data/esg_onlineclass/",
+    "img": "/img/delta.jpg",
+    "featured": false
+  },
+  {
+    "dir": "pet2025",
+    "s": "2025-07-25",
+    "e": "2025-08-28",
+    "commits": 30,
+    "tech": [
+      "Nuxt 3",
+      "PHP",
+      "MySQL"
+    ],
+    "cat": "event",
+    "title": "飼主聲音大調查，你的毛孩怎麼寵 | 聯合新聞網 | 寵物部落",
+    "desc": "如果毛孩會說話，牠會爆料你怎麼寵牠嗎？😼🐶 聯合新聞網寵物部落推出「飼主聲音大調查」，邀請所有奴才們聊聊日常寵愛秘訣與購物習慣。只要填問卷，就能獲得汪喵星球折扣碼，還有機會抽大獎！",
+    "url": "https://event.udn.com/bd_petsqa_2025",
+    "img": "/img/pet2025.jpg",
+    "featured": false
+  },
+  {
+    "dir": "tree",
+    "s": "2025-02-24",
+    "e": "2025-05-15",
+    "commits": 25,
+    "tech": [
+      "Astro"
+    ],
+    "cat": "feature",
+    "title": "與樹同行 走出一座健康森林",
+    "desc": "健康的森林，是多元物種成長的棲地。健康的身心，是我們賴以維生的基底。今年4月，世界地球日55週年，聯合線上發起「與樹同行．走出一座健康森林」行動，結合植樹與健走，共創環境與人類健康的雙贏，為島嶼永續邁出穩健每一步。",
+    "url": "https://udn.com/upf/ubrand/2025_data/walkfortrees/",
+    "img": "/img/tree.jpg",
+    "featured": false
+  },
+  {
+    "dir": "paperLight",
+    "s": "2024-12-11",
+    "e": "2025-08-05",
+    "commits": 53,
+    "tech": [
+      "HTML/JS"
+    ],
+    "cat": "landing",
+    "title": "POD Landing Page",
+    "desc": "隨需列印服務的 landing page。",
+    "url": "https://pod.udn.com/",
+    "img": "/img/paperLight.jpg",
+    "featured": false
+  },
+  {
+    "dir": "udndata-pages",
+    "s": "2025-01-06",
+    "e": "2025-10-22",
+    "commits": 11,
+    "tech": [
+      "HTML/JS"
+    ],
+    "cat": "landing",
+    "title": "聯合知識庫 - 歷史的窗 從雲端看台灣",
+    "desc": "提供聯合報系各報新聞全文資料庫及圖片資料庫、全版資料庫查詢服務及授權，資料範圍自1951/9/16迄今，並有全頁報紙影像光碟之販售。除了聯合報系內容，並提供遠見雜誌、商業周刊、動腦雜誌等台灣主流雜誌與新聞資料庫服務，是全球最大的中文跨媒體新聞資料庫平台。",
+    "url": "",
+    "img": "/img/udndata-pages.jpg",
+    "featured": false
+  },
+  {
+    "dir": "paperDataPen",
+    "s": "2025-03-25",
+    "e": "2025-04-01",
+    "commits": 7,
+    "tech": [
+      "Astro"
+    ],
+    "cat": "landing",
+    "title": "原版報紙資料庫升級版｜珍藏歷史筆耕未來",
+    "desc": "即日起訂購《原版報紙資料庫升級版》任一報別，贈送「老派摩登女子鋼筆」與「老派隨身小冊」！資料庫完整收錄聯合報、經濟日報內容，且每日更新，讓您輕鬆探索歷史。老派鋼筆與隨身小冊，讓您更添書寫樂趣。數量有限，欲購從速！",
+    "url": "https://udndata.com/promo/newspaper/PTCTF",
+    "img": "/img/paperDataPen.jpg",
+    "featured": false
+  },
+  {
+    "dir": "tagBakery",
+    "s": "2025-04-09",
+    "e": "2025-04-14",
+    "commits": 5,
+    "tech": [
+      "Astro"
+    ],
+    "cat": "event",
+    "title": "！琅琅原創蛋糕鋪｜標籤為你添料，故事更加美味",
+    "desc": "即日起至5/31，三重回饋最高2000點！",
+    "url": "https://reading.udn.com/story/act/tagbakery/",
+    "img": "/img/tagBakery.jpg",
+    "featured": false
+  },
+  {
+    "dir": "glf",
+    "s": "2024-11-28",
+    "e": "2025-04-01",
+    "commits": 10,
+    "tech": [
+      "Astro"
+    ],
+    "cat": "feature",
+    "title": "udn 中保好生活特輯｜好生活社區管理升級趨勢",
+    "desc": "中保好生活智慧APP，簡化管理作業流程，有效節省人事成本，提升便利性，開創社區管理新模式。出門不用帶鑰匙，只帶一支手機即可暢行！迎向只帶手機出門的時代，自家門鎖、社區大門全面智慧化。",
+    "url": "https://event.udn.com/glf/",
+    "img": "/img/glf.jpg",
+    "featured": false
+  },
+  {
+    "dir": "superog",
+    "s": "2024-09-09",
+    "e": "2024-11-15",
+    "commits": 331,
+    "tech": [
+      "Astro"
+    ],
+    "cat": "event",
+    "title": "2024 超橘派對 Super Orange ｜聯合線上",
+    "desc": "全台最大跨世代狂歡派對「Super Orange 超橘派對」，邀請大人們帶頭，孩青銀三代同行，一起翻玩年末最強樂園趴！眾多活動包含超強卡司歌手同樂、名人講座分享、卡拉OK決賽飆歌、活力十足的運動賽事與多元的市集體驗活動，大帶小共同創造最豐滿與美好的年末回憶！",
+    "url": "https://event.udn.com/superorange2024/",
+    "img": "/img/superog.jpg",
+    "featured": false
+  },
+  {
+    "dir": "paperData",
+    "s": "2024-09-26",
+    "e": "2024-11-29",
+    "commits": 22,
+    "tech": [
+      "Astro"
+    ],
+    "cat": "landing",
+    "title": "原版報紙資料庫升級版｜知識大富翁超值方案",
+    "desc": "我們提供最高品質的原版報紙資料庫和專業雜誌內容，打造出專屬「知識大富翁」的超值組合。合購方案最高優惠7折，讓每一位使用者都能輕鬆在職場上成為知識大富翁。",
+    "url": "",
+    "img": "/img/paperData.jpg",
+    "featured": false
+  },
+  {
+    "dir": "langStudio",
+    "s": "2024-12-03",
+    "e": "2024-12-13",
+    "commits": 14,
+    "tech": [
+      "HTML/JS"
+    ],
+    "cat": "landing",
+    "title": "琅琅原創：故事無界，創作無限",
+    "desc": "我們致力於發掘潛力作品、創造內容收益，並提供多元媒合發展機會，同時挹注報系豐富媒體資源，打造創作、閱讀、媒體一站式的全新舞台。",
+    "url": "",
+    "img": "/img/langStudio.jpg",
+    "featured": false
+  },
+  {
+    "dir": "whalepick",
+    "s": "2024-11-19",
+    "e": "2024-11-29",
+    "commits": 10,
+    "tech": [
+      "HTML/JS"
+    ],
+    "cat": "landing",
+    "title": "喜歡出國旅行？讓旅行質感加分的思維帶了嗎？｜一刻鯨選",
+    "desc": "",
+    "url": "",
+    "img": "/img/whalepick.jpg",
+    "featured": false
+  }
+]
