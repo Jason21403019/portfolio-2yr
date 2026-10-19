@@ -20,3 +20,14 @@ npm run preview
 - `src/data/projects.json`：作品牆的專案資料（標題、說明、連結、縮圖、日期、技術）
 - `public/img/`：專案縮圖
 - `src/styles/global.css`：配色與樣式（最上方的 `:root` 變數）
+
+## 部署（Cloudflare Pages）
+
+在 Cloudflare 連接這個 GitHub 倉庫，建置設定：
+
+- Framework preset：Astro
+- Build command：`npm run build`
+- Build output directory：`dist`
+- 環境變數：`NODE_VERSION` = `22`（專案內也有 `.node-version`）
+
+推送到 `master` 就會自動重新部署。

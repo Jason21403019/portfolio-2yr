@@ -1,7 +1,5 @@
 import { defineConfig } from 'astro/config';
 
-// GitHub Pages 專案網站：https://jason21403019.github.io/portfolio-2yr/
-export default defineConfig({
-  site: 'https://jason21403019.github.io',
-  base: '/portfolio-2yr',
-});
+// Cloudflare Pages 部署在網域根目錄，base 用預設的 '/'。
+// 取得正式網址後可加上 site: 'https://你的網址'。
+export default defineConfig({});
